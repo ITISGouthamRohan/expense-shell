@@ -19,7 +19,7 @@
     fi
  }
 
- if [$USERID -ne 0 ]
+ if [ $USERID -ne 0 ]
  then
     echo "please run thi script with root access"
     exit 1 #manually exit if error comes.  
