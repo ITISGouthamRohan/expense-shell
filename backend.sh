@@ -46,5 +46,5 @@
     useradd expense &>>$LOGFILE
     VALIDATE $? "Creating expense user"
  else
-     echo "Expense user already created...$y SKIPPING $N"
+     echo "Expense user already created...$Y SKIPPING $N"
  fi    
