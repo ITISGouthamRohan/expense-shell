@@ -64,6 +64,7 @@
  npm install &>>$LOGFILE
  VALIDATE $? "Installing Nodejs dependencies"
 
+ # checl your repo and path
  cp /home/ec2-user/expense-shell/backend.service /etc/systemd/system/backend.service &>>$LOGFILE
  VALIDATE $? "Copied backend service"
 
@@ -86,3 +87,5 @@
 
  systemctl restart backend &>>$LOGFILE
  VALIDATE $? "Restarting backend service"
+
+ #sudo cat /app/schema/backend.sql
